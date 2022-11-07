@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Oxanium;
+    text-transform: capitalize;
+}
+
+.fontHuge {
+    font-size: 100px;
+}
+
+.fontInter {
+    font-family: Inter;
+}
+
+.fontSmall {
+    font-size: 25px;
+}
+
+.colorGreyFont {
+    color: rgba(217, 217, 217, 0.81);
+}
+
+.fontFooter {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 252%;
+    color: #96839B;
+}
+
+body {
+    background: #0E042B;
+
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.mainPage {
+
+    max-width: 1730px;
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoBlock {
+    width: 90px;
+    height: 80px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandName {
+    margin-left: 12px;
+    width: 245px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.265em;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.navButton {
+    margin-right: 100px;
+
+}
+
+.navButton p {
+    font-size: 35px;
+}
+
+.root {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discoverExplore {
+    width: 45%;
+    max-width: 800px;
+
+}
+
+.advertisementSlogan {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 81px;
+}
+
+.advertisementSloganSmall {
+    font-weight: 600;
+
+    line-height: 31px;
+
+}
+
+.buttonBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+    height: 70px;
+}
+
+.exploreButton {
+    width: 40%;
+
+    max-width: 260px;
+    height: 70px;
+
+    background: transparent;
+    border-radius: 30%;
+
+    border: 8px dashed #6C4DE8;
+    box-shadow: 0px 0px 50px #AD1AAF;
+    font-weight: 600;
+    line-height: 31px;
+
+}
+
+.createButton {
+    width: 40%;
+
+    max-width: 260px;
+    height: 70px;
+    border-radius: 30%;
+
+    background: #6C4DE8;
+    border: 5px dashed #904de8;
+    box-shadow: 0px 0px 50px #AD1AAF;
+    font-weight: 600;
+    line-height: 31px;
+
+}
+
+.example {
+    width: 45%;
+}
+
+.exampleCards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.exampleCardOne {
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    border-width: 2.5px 0px;
+    border-style: solid;
+    border-color: #6C4DE8;
+    backdrop-filter: blur(17.915px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41.6667px;
+    padding: 5%;
+    z-index: 3;
+    margin-right: -35px;
+}
+
+.exampleImage {
+    width: 100%;
+}
+
+.exampleName {
+    line-height: 31px;
+    text-align: center;
+    text-transform: capitalize;
+
+    margin-block: 5%;
+}
+
+.examplePrice {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.exampleCardTwo {
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    border-width: 2.5px 0px;
+    border-style: solid;
+    border-color: #6C4DE8;
+    backdrop-filter: blur(17.915px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41.6667px;
+    padding: 5%;
+    z-index: 2;
+}
+
+.exampleNumbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 5%;
+}
+
+.numbersSection {
+    margin-left: 7%;
+}
+
+.numberKilo {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.numberName {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+    text-align: center;
+
+    color: rgba(217, 217, 217, 0.81);
+}
+
+.supportedWalletsContainer {
+    margin-top: 15%;
+    height: auto;
+}
+
+.containerHeader {
+    font-weight: 600;
+    padding: 1%;
+    line-height: 125px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.walletsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.walletsCard {
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    border-width: 2.5px 0px;
+    border-style: solid;
+    border-color: #6C4DE8;
+    backdrop-filter: blur(17.915px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41.6px;
+    padding: 3%;
+}
+
+.walletName {
+    font-weight: 500;
+    line-height: 31px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.howItWorksContainer {
+    margin-top: 15%;
+}
+
+.containerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listBlock {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listBlock p {
+    margin-top: 20%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 31px;
+    max-width: 128px;
+}
+
+.horArrow {
+    margin-bottom: 6%;
+}
+
+.trendingContainer {
+    margin-top: 15%;
+}
+
+.nftList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15%;
+    justify-content: center;
+}
+
+.nftCard {
+    max-width: 360px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    border-width: 2.5px 0px;
+    border-style: solid;
+    border-color: #6C4DE8;
+    backdrop-filter: blur(17.915px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41.6667px;
+}
+
+.nftImage {
+    padding: 5%;
+}
+
+.nftImage img {
+    width: 100%;
+}
+
+.nftCardSectionOne {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2%;
+
+}
+
+.nftName {
+    margin-left: 5%;
+}
+
+.author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.05em;
+}
+
+.nftCardSectionTwo {
+    margin-top: 8%;
+    padding-inline: 5%;
+}
+
+.onSale {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.05em;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.priceCrypto {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.priceDollar {
+    float: right;
+    margin-top: 2%;
+}
+
+.buyButton {
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    height: 50px;
+    border-radius: 10px;
+
+    background: #6C4DE8;
+    border: 5px solid #6C4DE8;
+    box-shadow: 0px 0px 20px #AD1AAF;
+
+    margin-top: 7%;
+    margin-bottom: 5%;
+
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.seeMore {
+    display: flex;
+    justify-content: center;
+}
+
+.seeMoreButton {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 1%;
+
+    font-weight: 600;
+
+    line-height: 31px;
+    width: 25%;
+    background: transparent;
+    border: 8px dashed #6C4DE8;
+    box-shadow: 0px 0px 50px #AD1AAF;
+    border-radius: 30%;
+}
+
+.detailsContainer {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.join {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    width: 80%;
+
+}
+
+.join p {
+    color: #D9D9D9;
+}
+
+.formInput {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputEmail[type="text"] {
+    background: #D9D9D9;
+    border-radius: 30px;
+    height: 100px;
+    width: 75%;
+    min-width: 1000px;
+    padding: 0 25px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.inputEmail[type="submit"] {
+    position: relative;
+    height: 90px;
+    min-width: 180px;
+    text-align: center;
+    background: black;
+    color: #D9D9D9;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -187px;
+    transition: 0.5s;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.inputEmail[type="submit"]:hover {
+    color: black;
+    background: #D9D9D9;
+    border: 1px solid black;
+}
+
+.footer {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLogo {
+    width: 28%;
+}
+
+.socials {
+    width: 36%;
+    padding-block: 30px;
+}
+
+.description {
+    max-width: 410px;
+    line-height: 36px;
+}
+
+.socialsLogo {
+    margin-top: 50px;
+    display: flex;
+    gap: 5%;
+}
+
+.aboutSupport {
+    width: 36%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    width: 50%;
+}
+
+.aboutSupport h3 {
+    padding-bottom: 3px;
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
+.aboutSupport p {
+    padding-bottom: 2px;
+}
+
+.support {
+    width: 50%;
+}
+
+.rights {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carouselCard {
+    position: relative;
+
+    width: 600px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    border-width: 2.5px 0px;
+    border-style: solid;
+    border-color: #6C4DE8;
+    backdrop-filter: blur(17.915px);
+    border-radius: 41.6667px;
+}
+
+.carouselImgTwo {
+    height: 90%;
+}
+
+.carouselCard .nftCardSectionOne {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.carouselNextButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+}
+.carouselPrevButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+}
+.carouselTrackContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.carouselTrack {
+    margin: 0;
+    padding: 0;
+    max-width: 1500px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carouselCard.currentSlide {
+
+}

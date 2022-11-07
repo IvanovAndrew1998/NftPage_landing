@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fontInter {
+    font-family: Inter;
+}
+
+.fontColorWhite {
+    color: white;
+}
+
+.fontOxanium {
+    font-family: Oxanium;
+}
+
+body {
+
+    background: #563AC5;
+    height: 1vmax;
+
+
+}
+.pageBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 1080px;
+    max-width: 1920px;
+}
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    max-width: 1920;
+    max-height: 1080;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.logoBlock {
+    width: 90px;
+    height: 80px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandName {
+    margin-left: 12px;
+    width: 245px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.265em;
+}
+
+.container {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 5%;
+}
+
+.slogan {
+    padding: 5px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+}
+
+.figmaLogoBlock {
+    display: flex;
+    align-items: start;
+    margin-top: 10%;
+
+}
+
+.figmaLogoBlock p {
+    margin-left: 10px;
+    height: 44px;
+    font-size: 50px;
+}
+
+.figmaLogoBlock img {
+    margin-top: 1.5%;
+}
+.backgroundImage{
+    z-index: -1;
+    position: fixed;
+    right: 0px; bottom: 0px;
+    max-width: 1100px;
+    max-height: 1200px;
+}
