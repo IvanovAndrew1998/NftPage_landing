@@ -584,9 +584,10 @@ header {
     justify-content: space-between;
 }
 
+
 .carouselCard {
     position: relative;
-
+    transition: 0.5s;
     width: 600px;
     padding: 1%;
     display: flex;

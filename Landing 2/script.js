@@ -6,6 +6,8 @@ const cardWidth = 600;
 let currentCard = 2;
 const scaleDifference = 0.2;
 const overlapMultiplier = 2;
+const carouselTrack = document.querySelector('.carouselTrack');
+incCount = 0;
 
 
 
@@ -15,7 +17,7 @@ function ChangeCurrent() {
     let counter = 0;
     
     slides.forEach(slide => {
-        slide.style.left = 50 * (counter++ - currentCard);
+        slide.style.left = 50 * (counter++ - currentCard) + 'px';
         slide.style.transform = '';
         slide.style.filter = '';
         slide.style.zIndex = zIndexCounter++;
@@ -24,7 +26,10 @@ function ChangeCurrent() {
 
     for (let i = 0; i < slides.length; i++) {
         const element = slides[i];
-        element.style.left = element.style.left -(scaleDifference * cardWidth * (i - currentCard)) * overlapMultiplier + 'px';
+        const leftCoef = (scaleDifference * cardWidth) * overlapMultiplier;
+        const leftComp = 2.1;
+        element.style.left = Number(element.style.left.slice(0,-2))  - leftCoef*(i - currentCard) - leftCoef*incCount*leftComp + 'px';
+        carouselTrack.style.left = (scaleDifference * cardWidth * (i - currentCard)) * overlapMultiplier + 'px';
         if (i != currentCard) {
             element.style.transform = 'scale(0.8)';
   
@@ -40,19 +45,23 @@ function ChangeCurrent() {
 }
 ChangeCurrent();
 
-function incPlus () {
-    currentCard++;
-    ChangeCurrent();
-
+function inc () {
+    if (currentCard < slides.length - 1) {
+        currentCard++;
+        incCount++;
+        ChangeCurrent();
+    }
 }
-function incMinus () {
-    currentCard--;
-    ChangeCurrent();
-
+function Deinc () {
+    if (currentCard > 0) {
+        currentCard--;
+        incCount--;
+        ChangeCurrent();
+    }
 }
 
-nextButton.addEventListener('click', incPlus);
-prevButton.addEventListener('click', incMinus)
+nextButton.addEventListener('click', inc);
+prevButton.addEventListener('click', Deinc)
 
 
 // евент листенер на кнопку. Курент + или - 1. вызов цикла для обновления.
