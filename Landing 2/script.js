@@ -32,7 +32,6 @@ function ChangeCurrent() {
         carouselTrack.style.left = (scaleDifference * cardWidth * (i - currentCard)) * overlapMultiplier + 'px';
         if (i != currentCard) {
             element.style.transform = 'scale(0.8)';
-  
             element.style.zIndex = -Math.abs(currentCard - i);
         }
 
