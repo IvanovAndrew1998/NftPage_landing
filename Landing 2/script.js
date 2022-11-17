@@ -2,7 +2,7 @@ const track = document.querySelector('.carouselTrack');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carouselNextButton');
 const prevButton = document.querySelector('.carouselPrevButton');
-const cardWidth = 600;
+let cardWidth = document.querySelector('.carouselCard').offsetWidth;
 let currentCard = 2;
 const scaleDifference = 0.2;
 const overlapMultiplier = 2;
@@ -10,6 +10,8 @@ const carouselTrack = document.querySelector('.carouselTrack');
 incCount = 0;
 const hamburger = document.querySelector(".hamburgerImage");
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
+const screenWidth = document.body.clientWidth;
+const header = document.querySelector("header");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -19,6 +21,8 @@ hamburgerMenu.addEventListener("click", () => {
     hamburger.classList.remove("active");
     hamburgerMenu.classList.remove("active");
 });
+
+header.style.width = screenWidth + 'px';
 
 function ChangeCurrent() {
 
@@ -68,9 +72,12 @@ function Deinc () {
     }
 }
 
+
+
 nextButton.addEventListener('click', inc);
 prevButton.addEventListener('click', Deinc)
 
+header.style.width = screenWidth + 'px';
 
 // евент листенер на кнопку. Курент + или - 1. вызов цикла для обновления.
 // Если карточек мало, то через If решить проблему с отсчетом элемента в массиве.

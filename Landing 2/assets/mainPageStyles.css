@@ -56,6 +56,7 @@ header {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 1%;
+    max-width: 90%;
 }
 
 .logo {
@@ -104,8 +105,7 @@ header {
 
 .root {
     padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -586,6 +586,10 @@ header {
     text-align: center;
 }
 
+.carouselContainer {
+    overflow: hidden;
+}
+
 .carousel {
     display: flex;
     justify-content: space-between;
@@ -595,7 +599,7 @@ header {
 .carouselCard {
     position: relative;
     transition: 0.5s;
-    width: 600px;
+    width: 300px;
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -622,30 +626,28 @@ header {
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 50;
+    z-index: 15;
 }
 
 .carouselPrevButton {
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 50;
+    z-index: 15;
 }
 
-.carouselTrackContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 
 .carouselTrack {
     margin: 0;
     padding: 0;
-    max-width: 1500px;
+    max-width: 1200px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+   
 }
 
 
@@ -774,6 +776,12 @@ header {
     }
     .name {
         font-size: 20px;
+    }
+    .carousel {
+        justify-content: space-evenly;
+    }
+    .carouselTrack {
+        width: 500px;
     }
 }
 
@@ -959,7 +967,14 @@ header {
         height: 40px;
     }
 
-
+    .carouselTrack {
+        width: 400px;
+    }
+    .carouselCard {
+        width: 200px;
+        padding: 2%;
+        border-radius: 30px;
+    }
 
 
     .fontHuge {
@@ -1045,6 +1060,9 @@ header {
     .priceDollar {
         font-size: 13px;
     }
+    .carouselTrack {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 484px) {
@@ -1126,6 +1144,9 @@ header {
     }
     .listBlock p {
         font-size: 15px;
+    }
+    .carouselTrack {
+        width: 220px;
     }
 
 
@@ -1239,6 +1260,10 @@ header {
         font-size: 15px;
     }
 
+    .carouselTrack {
+        width: 150px;
+    }
+
     .infoBlock h2 {
         font-size: 20px;
     }
@@ -1276,3 +1301,5 @@ header {
         font-size: 15px;
     }
 }
+
+/* PERENACOVI ROOT */
